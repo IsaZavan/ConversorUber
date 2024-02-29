@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="btn"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="422dp"
+        android:layout_height="96dp"
+        android:background="#9C27B0"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <EditText
+        android:id="@+id/editKm"
+        android:layout_width="258dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="396dp"
+        android:ems="10"
+        android:hint="Insira a quantidade de Km"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <EditText
+        android:id="@+id/editSalario"
+        android:layout_width="252dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="Insira o valor do salario"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="btnCalcular"
+        android:text="Calcular"
+        app:iconTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="68dp"
+        android:layout_height="42dp"
+        android:text="Total"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
